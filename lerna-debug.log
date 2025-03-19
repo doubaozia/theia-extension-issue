@@ -1,0 +1,36 @@
+0 silly input [ 'prepare' ]
+1 silly flags { _: [ 'run' ], script: 'prepare', args: [] }
+2 verbose rootPath /Users/doudou/dev/test
+3 info version 2.4.0
+4 silly existsSync /Users/doudou/dev/test/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInPackageStreaming [ 'prepare', [], 'auto-git' ]
+9 silly getExecOpts { cwd: '/Users/doudou/dev/test/auto-git' }
+10 error execute callback with error
+11 error Error: Command failed: npm run prepare
+11 error warning package.json: No license field
+11 error warning package.json: No license field
+11 error error Command failed with exit code 2.
+11 error npm ERR! Lifecycle script `prepare` failed with error:
+11 error npm ERR! Error: command failed
+11 error npm ERR!   in workspace: auto-git@0.0.0
+11 error npm ERR!   at location: /Users/doudou/dev/test/auto-git
+11 error
+11 error
+11 error > auto-git@0.0.0 prepare
+11 error > yarn run clean && yarn run build
+11 error
+11 error yarn run v1.22.22
+11 error $ rimraf lib
+11 error Done in 0.56s.
+11 error yarn run v1.22.22
+11 error $ tsc
+11 error src/common/protocol.ts(3,28): error TS6059: File '/Users/doudou/dev/test/auto-git/shared.ts' is not under 'rootDir' '/Users/doudou/dev/test/auto-git/src'. 'rootDir' is expected to contain all source files.
+11 error   The file is in the program because:
+11 error     Imported via '../../shared' from file '/Users/doudou/dev/test/auto-git/src/common/protocol.ts'
+11 error     Imported via '../../shared' from file '/Users/doudou/dev/test/auto-git/src/node/auto-git-backend-service.ts'
+11 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+11 error
+11 error     at /Users/doudou/dev/test/node_modules/execa/index.js:236:11
