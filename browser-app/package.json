@@ -19,6 +19,9 @@
   "devDependencies": {
     "@theia/cli": "1.59.0"
   },
+  "resolutions": {
+    "node-abi": "^3.0.0"
+  },
   "scripts": {
     "bundle": "yarn rebuild && theia build --mode development",
     "rebuild": "theia rebuild:browser --cacheRoot ..",
